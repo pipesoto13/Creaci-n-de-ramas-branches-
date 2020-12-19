@@ -1,0 +1,20 @@
+Discusión: Creación de ramas (branches)
+Las ramas (branches) van a ser parte de tu proceso de desarrollo y es muy probable que las uses casi a diario. Los comandos más importantes relacionados con las ramas son los siguientes:
+
+$ git branch
+Este comando lista todas las ramas que existen en tu repositorio local.
+
+$ git branch nueva-rama
+Este comando crea una nueva rama (en este caso llamada nueva-rama) pero no te ubica en la nueva rama.
+
+$ git checkout -b nueva-rama
+Este comando hace dos acciones. Crea la rama (como en el comando anterior) y te ubica en la nueva rama.
+
+$ git branch -d nueva-rama
+Este comando elimina una rama. Si ya hiciste commit sobre esa rama y no has integrado tus cambios al master, este comando falla.
+
+$ git branch -D nueva-rama
+Muy parecido al comando anterior, pero esta vez la rama va a ser eliminada así tenga commits que no han sido integrados a master. Usa este comando con cuidado.
+
+$ git branch -m nuevo-nombre
+Este comando renombra la rama en la que te encuentras ubicado.
